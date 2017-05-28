@@ -27,8 +27,9 @@ SIC
 
 // control variable
 C_current_ratio	
-C-firm_size_in-thousands	
-C_firm_siza_log	C_firm_age	
+C_firm_size_in_thd	
+C_firm_siza_log	
+C_firm_age	
 C_prior_count	
 C_prior_citation	
 C_prior_new	
