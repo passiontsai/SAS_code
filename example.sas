@@ -79,7 +79,7 @@ emerge_comb_3
 
 // moderator effect 
 AbsRDExp_EnvDynSale	
-AbsRDEx_EnvMunSale	
+AbsRDExp_EnvMunSale	
 AbsRDExp_EnvDynOper	
 AbsRDExp_EnvMunOper	
 AbsRDExp_EnvDynSUM	
@@ -104,12 +104,22 @@ kdiv_EnvDynSUM
 kdiv_EnvMunSUM
 
 
-
 // Model 1
 control -> DV
+proc genmod data=work.chem_5;
+	model DV = C_current_ratio C_firm_size_in_thd C_firm_siza_log C_firm_age C_prior_count C_prior_citation C_prior_new C_prior_copy C_prior_emerge / type3 dist=negbin;
+run ;
+
 
 // Model 2
 control + IV + moderator variable -> DV
+proc genmod data=work.chem_5;
+	model DV = Dynamism_sale Munificence_sale Dynamism_operating Munificence_operating Dynamism_all Munificence_all RD_exp RD_intensity k_div exp_ratio C_current_ratio	C_firm_size_in_thd C_firm_siza_log C_firm_age C_prior_count C_prior_citation C_prior_new C_prior_copy C_prior_emerge / type3 dist=negbin;
+run ;
+
 
 // Model 3 
 control + IV + moderator variable + moderator effect -> DV 
+proc genmod data=work.chem_5;
+	model DV = kdiv_EnvDynSUM kdiv_EnvMunSUM Explor_EnvDynSUM Explor_EnvMunSUM AbsRDExp_EnvDynSUM AbsRDExp_EnvMunSUM Dynamism_sale Munificence_sale Dynamism_operating Munificence_operating Dynamism_all Munificence_all RD_exp RD_intensity k_div exp_ratio C_current_ratio C_firm_size_in_thd C_firm_siza_log C_firm_age C_prior_count C_prior_citation C_prior_new C_prior_copy C_prior_emerge / type3 dist=negbin;
+run ;
