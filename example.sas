@@ -19,7 +19,7 @@ proc glm data=work.chem_5;
 run;
 
 
-/* all column name/
+/* all column name*/
 gvkey	
 datayear	
 companyname	
