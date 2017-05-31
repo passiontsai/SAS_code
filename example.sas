@@ -12,11 +12,13 @@ run;
 
 
 /* run random effect */
+// glm = General Linear Model
 proc glm data=work.chem_5;
 	class k_div exp_ratio;
 	model p_count = k_div exp_ratio;
 	random k_div exp_ratio;
 run;
+
 
 
 /* all column name*/
