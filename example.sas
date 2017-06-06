@@ -155,3 +155,11 @@ class id;
 model docvis = outwork age female married edlevel2 edlevel3 edlevel4 / dist= nb;
 repeated subject = id;
 run;
+
+
+/*random + NB */
+proc glimix data = data;
+ class k_div exp_ratio;
+ model p_count = k_div exp_ratio / dist = nb;
+ random k_div exp_ratio;
+run;
