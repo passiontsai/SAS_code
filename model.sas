@@ -64,10 +64,10 @@ control + IV + moderator variable + moderator effect -> DV
 
 proc countreg data = work.data groupid=gvkey;
  model DV = 
-  AbsRDExp_EnvDynSale AbsRDExp_EnvMunSale AbsRDExp_EnvDynOper AbsRDExp_EnvMunOper AbsRDExp_EnvDynSUM AbsRDExp_EnvMunSUM	
-  AbsRDInt_EnvDynSale AbsRDInt_EnvMunSale AbsRDInt_EnvDynOper AbsRDInt_EnvMunOper AbsRDInt_EnvDynSUM AbsRDInt_EnvMunSUM	
-  Explor_EnvDynSale Explor_EnvMunSale Explor_EnvDynOper Explor_EnvMunOper Explor_EnvDynSUM Explor_EnvMunSUM	
-  kdiv_EnvDynSale kdiv_EnvMunSale kdiv_EnvDynOper kdiv_EnvMunOper kdiv_EnvDynSUM kdiv_EnvMunSUM
+  AbsRDExpEnvDynSale AbsRDExpEnvMunSale AbsRDExpEnvDynOper AbsRDExpEnvMunOper AbsRDExpEnvDynSUM AbsRDExpEnvMunSUM	
+  AbsRDIntEnvDynSale AbsRDIntEnvMunSale AbsRDIntEnvDynOper AbsRDIntEnvMunOper AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
+  ExplorEnvDynSale ExplorEnvMunSale ExplorEnvDynOper ExplorEnvMunOper ExplorEnvDynSUM ExplorEnvMunSUM	
+  kdivEnvDynSale kdivEnvMunSale kdivEnvDynOper kdivEnvMunOper kdivEnvDynSUM kdivEnvMunSUM
   Dynamism_sale Munificence_sale Dynamism_operating Munificence_operating Dynamism_all Munificence_all	
   Abs_RD_Exp Abs_RD_Intensity k_div exp_ratio 
   C_current_ratio C_firm_size C_firm_size_log C_prior_count C_prior_citation C_prior_new C_prior_copy C_prior_emerge	 
