@@ -163,3 +163,12 @@ proc glimix data = data;
  model p_count = k_div exp_ratio / dist = nb;
  random k_div exp_ratio;
 run;
+
+
+/* countreg */
+
+proc countreg data = work.chem groupid=gvkey;
+ model dv = iv1 iv2 iv3 / dist = neggin(p=1) ERRORCOMP = RANDOM ;
+run;
+
+
