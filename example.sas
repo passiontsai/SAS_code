@@ -136,3 +136,22 @@ run ;
    run;
 
 
+/* panel data */
+proc panel data=data;
+ id id t;
+ model lwage = exp exp2 wks ed /RANONE;
+run;
+
+
+in SAS,
+specifically, linear models with PROC GLM, logistic regression models with PROC LOGISTIC, models for count data
+with PROC GENMOD, and survival models with PROC PHREG.
+
+
+
+/*count data*/
+proc genmod data = rwm1984 ;
+class id;
+model docvis = outwork age female married edlevel2 edlevel3 edlevel4 / dist= nb;
+repeated subject = id;
+run;
