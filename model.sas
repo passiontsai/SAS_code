@@ -1,3 +1,10 @@
+/*match prior*/
+C_prior_count	
+C_prior_citation	
+C_prior_new	
+C_prior_copy	
+C_prior_emerge	
+
 /* DV list */
 p_count
 p_citation
