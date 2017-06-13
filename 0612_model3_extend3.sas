@@ -24,7 +24,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
 */   
   
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -32,7 +32,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -40,7 +40,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -48,7 +48,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -56,7 +56,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -64,7 +64,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -72,7 +72,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -80,7 +80,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_count_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -89,7 +89,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
 run ;
 
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -97,7 +97,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -105,7 +105,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -113,7 +113,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -121,7 +121,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -129,7 +129,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -137,7 +137,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -145,7 +145,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_count_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_count_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -157,7 +157,7 @@ run ;
 /*this has some problem*/
 
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -165,7 +165,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -173,7 +173,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -181,7 +181,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -189,7 +189,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -197,7 +197,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -205,7 +205,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -213,7 +213,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_cite_lag_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_lag_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -223,7 +223,7 @@ run ;
 
 
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -231,7 +231,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.all_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -239,7 +239,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -247,7 +247,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.ict_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -255,7 +255,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -263,7 +263,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.phar_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
@@ -271,7 +271,7 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
  AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
 kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
 ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
@@ -279,7 +279,7 @@ ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper
   / dist = negbin(p=2) ERRORCOMP = RANDOM method=qn;
 run ;
 proc countreg data = work.chem_size_5 groupid=gvkey;
- model p_cite_comb_2 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+ model p_cite_comb_3 = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
