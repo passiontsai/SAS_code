@@ -40,8 +40,20 @@ proc countreg data = work.all_size_4 groupid=gvkey;
 run ;
 
 proc countreg data = work.all_size_4 groupid=gvkey;
+ model p_count = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+  C_current_ratio C_firm_age C_firm_size_log C_prior_count	 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+
+proc countreg data = work.all_size_4 groupid=gvkey;
  model p_citation = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
   C_current_ratio C_firm_age C_firm_size_log C_prior_citation 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model p_citation = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+  C_current_ratio C_firm_age C_firm_size_log C_prior_citation
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 
@@ -52,7 +64,18 @@ proc countreg data = work.all_size_4 groupid=gvkey;
 run ;
 
 proc countreg data = work.all_size_4 groupid=gvkey;
+ model new = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+  C_current_ratio C_firm_age C_firm_size_log C_prior_new 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+
+proc countreg data = work.all_size_4 groupid=gvkey;
  model copy = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
+  C_current_ratio C_firm_age C_firm_size_log C_prior_copy
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model copy = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
   C_current_ratio C_firm_age C_firm_size_log C_prior_copy
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
@@ -60,6 +83,11 @@ run ;
 proc countreg data = work.all_size_4 groupid=gvkey;
  model emerge = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
   C_current_ratio C_firm_age C_firm_size_log C_prior_emerge
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model emerge = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+  C_current_ratio C_firm_age C_firm_size_log C_prior_emerge 
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
 
@@ -78,10 +106,28 @@ ExplorEnvDynSUM ExplorEnvMunSUM
 run ;
 
 proc countreg data = work.all_size_4 groupid=gvkey;
+ model p_count = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
+kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
+ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
+  C_current_ratio C_firm_age C_firm_size_log C_prior_count	 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+
+proc countreg data = work.all_size_4 groupid=gvkey;
  model p_citation = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
  AbsRDIntEnvDynSUM AbsRDIntEnvMunSUM	
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
+  C_current_ratio C_firm_age C_firm_size_log C_prior_citation	 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model p_citation = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
+kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
+ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
   C_current_ratio C_firm_age C_firm_size_log C_prior_citation	 
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
@@ -94,6 +140,14 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   C_current_ratio C_firm_age C_firm_size_log C_prior_new
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model new = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
+kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
+ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
+  C_current_ratio C_firm_age C_firm_size_log C_prior_new 
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
 
 proc countreg data = work.all_size_4 groupid=gvkey;
  model copy = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
@@ -103,7 +157,14 @@ ExplorEnvDynSUM ExplorEnvMunSUM
   C_current_ratio C_firm_age C_firm_size_log C_prior_copy
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
-
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model copy = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
+kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
+ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
+  C_current_ratio C_firm_age C_firm_size_log C_prior_copy
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
 
 proc countreg data = work.all_size_4 groupid=gvkey;
  model emerge = Abs_RD_Intensity k_div exp_ratio Dynamism_all Munificence_all
@@ -111,5 +172,13 @@ proc countreg data = work.all_size_4 groupid=gvkey;
 kdivEnvDynSUM kdivEnvMunSUM
 ExplorEnvDynSUM ExplorEnvMunSUM
   C_current_ratio C_firm_age C_firm_size_log C_prior_emerge
+  / dist = negbin(p=2) ERRORCOMP = RANDOM ;
+run ;
+proc countreg data = work.all_size_4 groupid=gvkey;
+ model emerge = Abs_RD_Intensity k_div exp_ratio Dynamism_sale Dynamism_operating Munificence_sale Munificence_operating
+ AbsRDIntEnvDynSale AbsRDIntEnvDynOper AbsRDIntEnvMunSale AbsRDIntEnvMunOper 
+kdivEnvDynSale kdivEnvDynOper kdivEnvMunSale kdivEnvMunOper 
+ExplorEnvDynSale ExplorEnvDynOper ExplorEnvMunSale ExplorEnvMunOper 
+  C_current_ratio C_firm_age C_firm_size_log C_prior_emerge 
   / dist = negbin(p=2) ERRORCOMP = RANDOM ;
 run ;
